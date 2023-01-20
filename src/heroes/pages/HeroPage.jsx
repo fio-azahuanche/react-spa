@@ -5,7 +5,7 @@ export const HeroPage = () => {
   const { id, ...rest } = useParams();
   const navigate = useNavigate();
   const hero = getHeroById( id );
-  
+
   const onNavigateBack = () => {
     navigate(-1);
   }
@@ -15,7 +15,7 @@ export const HeroPage = () => {
   }
 
   return (
-    <div className="row mt-5">
+    <div className="row mt-5 animate__animated animate__fadeInLeft">
       <div className="col-4">
         <img src={`/assets/heroes/${id}.jpg`} alt={hero.superhero} className="img-thumbnail"/>
       </div>
